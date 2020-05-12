@@ -29,8 +29,19 @@ const SET_CHARACTERS = (state, payload) => {
   state.characters = payload
 }
 
+/**
+ * Set characters info data to state of store
+ * @method SET_CHARACTER_INFO
+ * @param  {Array} state vuex state object
+ * @param  {Object} payload array of characters objects
+ */
+const SET_CHARACTER_INFO = (state, payload) => {
+  state.characterInfo = payload
+}
+
 export {
   SET_BOOKS,
   SET_HOUSES,
-  SET_CHARACTERS
+  SET_CHARACTERS,
+  SET_CHARACTER_INFO
 }

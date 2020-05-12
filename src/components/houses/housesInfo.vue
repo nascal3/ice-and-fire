@@ -53,14 +53,14 @@ export default {
     seats () {
       let seatsNames = ''
       this.houseInfo.seats.forEach(seat => {
-        seatsNames += seat
+        seatsNames += ` ${seat}`
       })
       return seatsNames
     },
     titles () {
       let houseTitles = ''
       this.houseInfo.titles.forEach(title => {
-        houseTitles += title
+        houseTitles += ` ${title}`
       })
       return houseTitles
     },

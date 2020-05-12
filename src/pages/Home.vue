@@ -15,7 +15,7 @@
 <script>
 import Books from '@/components/books/Books.vue'
 import Houses from '@/components/houses/Houses'
-import Characters from '@/components/Characters'
+import Characters from '@/components/characters/Characters'
 
 export default {
   name: 'Home',

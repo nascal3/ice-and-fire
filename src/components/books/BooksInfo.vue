@@ -42,7 +42,7 @@ export default {
     authors () {
       let authorsNames = ''
       this.bookInfo.authors.forEach(author => {
-        authorsNames += author
+        authorsNames += ` ${author}`
       })
       return authorsNames
     },

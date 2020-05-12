@@ -23,8 +23,17 @@ const houses = (state) => state.houses
  */
 const characters = (state) => state.characters
 
+/**
+  * Retrieve the character info fetched from API
+* @method characterInfo
+* @param  {Object} state vuex state object
+* @return {Array} Contains an array with characters data
+*/
+const characterInfo = (state) => state.characterInfo
+
 export {
   books,
+  houses,
   characters,
-  houses
+  characterInfo
 }

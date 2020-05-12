@@ -1,5 +1,6 @@
 export default {
   books: [],
   houses: [],
-  characters: []
+  characters: [],
+  characterInfo: {}
 }

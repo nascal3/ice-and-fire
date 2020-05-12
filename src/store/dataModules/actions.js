@@ -46,8 +46,25 @@ const fetchCharacters = async ({ commit }) => {
   }
 }
 
+/**
+ * fetch Character info from API endpoint
+ * @method fetchCharacterInfo
+ *  @param  {Object} commit vuex mutations
+ *  @param  {Number} payload vuex mutations
+ */
+const fetchCharacterInfo = async ({ commit }, payload) => {
+  const url = `${baseUrl}/api/characters/${payload}`
+  try {
+    const values = await axios.get(url)
+    commit('SET_CHARACTER_INFO', values.data)
+  } catch (err) {
+    throw new Error(err.message)
+  }
+}
+
 export {
   fetchBooks,
   fetchHouses,
-  fetchCharacters
+  fetchCharacters,
+  fetchCharacterInfo
 }
